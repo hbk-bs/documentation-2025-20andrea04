@@ -83,7 +83,11 @@
 <p>In the end, I decided that the critic would always give a ranking from 1–10 (although he is very critical and therefore never gives more than a 5) along with a short explanation. After that, the user can upload a new image.</p>
 <p>Here’s a small overview of how the information flows on my website:</p>
 
+<img src="./assets /images/screenshot_1.png" alt="Informationsfluss-Diagramm">
+
 <p>I noticed that I had never heard of one particular step before: Base64 conversion. After a bit of research, I learned that the image has to be converted into Base64 format because it is sent via a JSON API, and JSON only supports text. Base64 is an encoding method that transforms binary data (like images) into text so it can be transmitted smoothly through text-based protocols. In this way, it serves as a bridge that enables the AI to analyze uploaded images, even though the data exchange only happens in text form.</p>
+
+<img src="./assets /images/screenshot_2.png" alt="Informationsfluss-Diagramm">
 
 <p>Designing the website was not easy. To break away from the chat interface, I came up with the idea of presenting the uploaded image as if on a stage: the user uploads an image from their files, a red curtain opens, and after a short wait (for suspense), a spotlight shines on the image. After another brief pause, the critique of the image appears in a text box.</p>
 <p>The biggest difficulty here was the curtain. There are several layers: the upload area at the beginning, the curtain, the image behind the curtain, and finally the text box with the critique. It took me a while to figure out how to position everything so that the curtain was behind the upload area but still in front of the uploaded image. Through this, I learned how to work with the z-index, which controls the different layers.</p>
