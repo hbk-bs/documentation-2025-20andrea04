@@ -7,77 +7,24 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-
-	<title>text the universal interface</title>
-
-	<link rel="stylesheet" href="style.css" />
-
-	
-
-	
+    <title>text the universal interface</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
+<body>
 <header>
-		<div id="backlink">
-		<style>
-			#backlink {
-				--color-accent: hsl(198, 100%, 50%);
-				position: absolute;
-				top: 8px;
-				right: 8px;
-				border: 1px dashed black;
-				background-color: white;
-				padding: 8px;
-				cursor: pointer;
-				color: black;
-				font-size: 0.8rem;
-				font-weight: bold;
-				transition: all 0.3s ease;
-				transform: rotate(-2deg) scale(0.9);
-				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-				a {
-					text-decoration: none;
-					color: black;
-					color: inherit;
-					text-decoration: underline;
-					background-image: linear-gradient(to right,
-							var(--color-accent) 0%,
-							var(--color-accent) 100%);
-					background-size: 0% 100%;
-					background-position: left center;
-					background-repeat: no-repeat;
-					transition: background-size 0.2s ease-in-out;
-					padding: 0.5rem;
-				}
-				a:hover {
-					background-size: 100% 100%;
-					color: white;
-				}
-
-			}
-			#backlink:hover {
-				transform: rotate(2deg) scale(1);
-			}
-		</style>
-		
-	</div>
 	<h1>Text the universal interface </h1> 
-
-
 </header>
 
-<body>
-<ul>
-<li><a href="https://hbk-bs.github.io/text-the-universal-interface-20andrea04/">Der unbarmherzige Kunstkritiker</a></li>
-
-</ul> 
-
-
-	
-</body>
+<main>
+   <nav>
+      <ul>
+        <li><a href="https://hbk-bs.github.io/text-the-universal-interface-20andrea04/">Der unbarmherzige Kunstkritiker</a></li>
+       </ul> 
+    </nav>
+</main>
 
 <footer>
-	<p>What is an LLM? A Large Language Model is a computer program that has been trained on enormous amounts of text in order to understand and generate language. It works similarly to a very sophisticated autocomplete: it doesn’t just predict the next word, but can also write entire texts, answer questions, or explain things. At its core, it recognizes patterns in language and uses them to provide suitable responses.</p>
+<p>What is an LLM? A Large Language Model is a computer program that has been trained on enormous amounts of text in order to understand and generate language. It works similarly to a very sophisticated autocomplete: it doesn’t just predict the next word, but can also write entire texts, answer questions, or explain things. At its core, it recognizes patterns in language and uses them to provide suitable responses.</p>
 <p>For this assignment, however, the challenge was to build a website with an LLM that, if possible, should not have a chat interface. Ideally, there should be no text as input, but something else. The AI’s output, however, was allowed to be text.</p>
 <p>I had the idea of making the AI an art critic that sarcastically critiques images uploaded by the user. At first, it was hard for me to detach myself from the chat interface, since you usually interact with AI through a chat. I wanted users to be able to argue with the critic. But after a conversation with Fabian, I realized that this wasn’t really necessary for my website.</p>
 <p>In the end, I decided that the critic would always give a ranking from 1–10 (although he is very critical and therefore never gives more than a 5) along with a short explanation. After that, the user can upload a new image. Here’s a small overview of how the information flows on my website:</p>
@@ -92,8 +39,6 @@
 <p>The biggest difficulty here was the curtain. There are several layers: the upload area at the beginning, the curtain, the image behind the curtain, and finally the text box with the critique. It took me a while to figure out how to position everything so that the curtain was behind the upload area but still in front of the uploaded image. Through this, I learned how to work with the z-index, which controls the different layers.</p>
 <p>The image upload also didn’t work at first, since the chatbot was unable to read the image. I had to use a different API endpoint, and then the image upload worked. Finally, I had to decide whether I wanted to give the art critic a face or some sort of figure, but I decided against it—this way he remains a bit more mysterious.</p>
 <p>As an alternative idea, I had considered programming a chatbot that performs a proper image analysis instead of a sarcastic art critic. That could be a genuinely useful tool, instead of just a funny concept like the critic. In my opinion, this was the most challenging project of the semester, but also the one where I learned the most—for example, what an LLM is, what an API endpoint is, and what Base64 means.</p>
-
-
-
 </footer>
+</body>
 </html>
