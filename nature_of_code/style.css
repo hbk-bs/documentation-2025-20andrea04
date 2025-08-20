@@ -170,3 +170,13 @@ footer img {
     font-size: 1.2rem;
   }
 }
+
+/* Allgemeine Bildformatierung */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
