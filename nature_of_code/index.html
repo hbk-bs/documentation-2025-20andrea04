@@ -1,29 +1,90 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="de">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <title>nature of code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>{nature of code}</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-	<h1>nature of code </h1> 
-  </header>
+    <div class="container">
+        <header>
+            <h1>Nature of Code</h1>
+        </header>
 
-   <main>
-        <nav>
-			<ul>
-                 <li><a href="https://hbk-bs.github.io/nature-of-code-20andrea04/">german website</a></li>
+<main>
+    <nav>
+        <ul>
+            <li><a href="https://hbk-bs.github.io/nature-of-code-20andrea04/">german website</a></li>
+        </ul>
+      </nav>
+  
+        
+        <section class="section">
+            <div class="flex-container">
+                <div class="text-content">
+                    <h2>Inspiration aus Amrum</h2>
+                    <p>Im Rahmen unserer Exkursion auf Amrum sollten wir in der Natur nach Strukturen oder Abläufen suchen, die wir in code übersetzen wollen.</p>
+                    <p>Ich hab mich dazu entschieden, mich mit der Struktur von diesen Pflanzen auf der Salzwiese zu befassen.</p>
+                    <p>Dabei ist mir die Ballung der Pflanzen aufgefallen. Sie sind sehr gedrängt auf der Wiese und werden scheinbar durch das Wasser eingegrenzt.</p>
+                    <p>Dieses Phänomen wollte ich in meinem code mithilfe von Partikeln und einer Barriere aufgreifen. Wie wird eine sich bewegende Masse begrenzt und welche Strukturen entstehen dadurch?</p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/images/pflanze.jpg" alt="Pflanze auf Salzwiese" class="feature-image">
+                </div>
+            </div>
+            
+            <p>Dazu habe ich zunächst ein paar Skizzen angelegt:</p>
+            
+            <div class="image-grid">
+                <img src="assets/images/muster_1.jpg" alt="Skizze 1">
+                <img src="assets/images/muster_2.jpg" alt="Skizze 2">
+                <img src="assets/images/muster_3.jpg" alt="Skizze 3">
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="flex-container reverse">
+                <div class="text-content">
+                    <h2>Hyperbolische Bewegungsmuster</h2>
+                    <p>Die Partikel bewegen sich entlang gekrümmter Bahnen. Die markante "Öffnung" oder "Kurve", die sich ergibt, erinnert stark an den typischen Verlauf einer Hyperbel (zwei spiegelbildliche Äste, die sich von einem Zentrum wegkrümmen).</p>
+                    <p>In einem physikalischen Partikelsystem mit einer Barriere entstehen bei der Streuung oft Bahnmuster, die sich mathematisch mit Hyperbeln oder ähnlichen Kurven beschreiben lassen. Auch in der Natur (z.B. bei Lichtbrechung, Gravitation, etc.) entstehen hyperbelähnliche Muster, wenn eine Kraft auf viele Einzelobjekte wirkt.</p>
+                    <p>Eine bewegte Masse (Partikel) trifft auf eine Barriere und wird durch eine darunterliegende mathematische Struktur (Hyperbel) beeinflusst. In meinem Code nutze ich so eine Kurvenlogik, um organisch wirkende, aber mathematisch fundierte Bewegungen zu erzeugen.</p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/images/hyperbel.jpg" alt="Hyperbel" class="feature-image">
+                </div>
+            </div>
+        </section>
+        
+        <section class="code-section">
+            <h2> Visualisierung</h2>
+            <p>Hier kannst du die Partikel-Simulation in Aktion sehen. </p>
+            <p> Die unsichtbaren Barrieren lenken die Partikel um und begrenzen so ihren Raum:</p>
+            
+            <div class="canvas-container">
+                <div id="sketch"></div>
+                <a href="index.js" class="source-link">source code</a>
+            </div>
+            
+            <div class="text-content">
+                <p> Hier sind ein paar Screenshots von coolen Mustern, die aus dem Code entstanden sind:</p>
+            </div>
 
-            </ul> 
-        </nav>
-    </main>
-	
-  <footer>
-	<p> text</p>
-  </footer>
+            <div class="image-grid">
+                <img src="assets/images/screenshot_1.jpg" alt="Screenshot 1">
+                <img src="assets/images/screenshot_2.jpg" alt="Screenshot 2">
+                <img src="assets/images/screenshot_3.jpg" alt="Screenshot 3">
+            </div>
+        </section>
+</main>       
+        <footer>
+            &copy; 2025 | Andrea Kost Avila
+        </footer>
+    </div>
+    
+    <script src="modules/p5/lib/p5.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
