@@ -213,3 +213,29 @@ nav li:hover {
 footer p {
   margin-bottom: 20px;
 }
+/* Styling für die Figma-Screenshots */
+.figma-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.figma-screenshots img {
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+    object-fit: contain; /* Wichtig: Verhindert Verzerrungen */
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+
+/* Responsive Anpassung */
+@media (max-width: 768px) {
+  .figma-screenshots {
+    gap: 10px;
+  }
+}
