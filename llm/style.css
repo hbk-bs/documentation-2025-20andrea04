@@ -170,3 +170,45 @@ footer img {
     font-size: 1.2rem;
   }
 }
+/* Füge diesen Code zu deiner CSS-Datei hinzu */
+
+/* Gemeinsame Link-Styling für Navigation und Footer */
+.nav-style-link {
+  display: inline-block;
+  padding: 15px 25px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.nav-style-link:hover {
+  color: var(--color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation-Links aktualisieren, um gemeinsame Styles zu nutzen */
+nav a {
+  display: block; /* Behält das Block-Display für Navigation */
+}
+
+/* Bestehende nav li Styles beibehalten, aber vereinfachen */
+nav li {
+  background-color: transparent; /* Entfernt Hintergrund vom li */
+  border-radius: 0;
+  box-shadow: none;
+}
+
+nav li:hover {
+  transform: none; /* Entfernt Transform vom li */
+  box-shadow: none;
+}
+
+/* Footer-Absatz-Abstand für Links */
+footer p {
+  margin-bottom: 20px;
+}
