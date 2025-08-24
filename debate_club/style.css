@@ -170,3 +170,50 @@ footer img {
     font-size: 1.2rem;
   }
 }
+/* Home-Link Styling */
+#home-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+#home-link a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+#home-link a:hover {
+  transform: translateX(-3px);
+  color: var(--color-accent);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header-Padding anpassen, damit Platz für den Link ist */
+header {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  #home-link {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  header {
+    padding-top: 20px;
+  }
+}
