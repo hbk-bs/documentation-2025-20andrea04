@@ -27,20 +27,23 @@
 </main>
 
 <footer>
-<p>What is an LLM? A Large Language Model is a computer program that has been trained on enormous amounts of text in order to understand and generate language. It works similarly to a very sophisticated autocomplete: it doesn’t just predict the next word, but can also write entire texts, answer questions, or explain things. At its core, it recognizes patterns in language and uses them to provide suitable responses.</p>
+<h2>What is a LLM?</h2>
+<p>A Large Language Model is a computer program that has been trained on enormous amounts of text in order to understand and generate language. It works similarly to a very sophisticated autocomplete: it doesn’t just predict the next word, but can also write entire texts, answer questions, or explain things. At its core, it recognizes patterns in language and uses them to provide suitable responses.</p>
+<h2>Idea</h2>
 <p>For this assignment, however, the challenge was to build a website with an LLM that, if possible, should not have a chat interface. Ideally, there should be no text as input, but something else. The AI’s output, however, was allowed to be text.</p>
 <p>I had the idea of making the AI an art critic that sarcastically critiques images uploaded by the user. At first, it was hard for me to detach myself from the chat interface, since you usually interact with AI through a chat. I wanted users to be able to argue with the critic. But after a conversation with Fabian, I realized that this wasn’t really necessary for my website.</p>
 <p>In the end, I decided that the critic would always give a ranking from 1–10 (although he is very critical and therefore never gives more than a 5) along with a short explanation. After that, the user can upload a new image. Here’s a small overview of how the information flows on my website:</p>
 
 <img src="./assets/images/screen_1.png" alt="Informationsfluss-Diagramm">
-
+<h2>Learnings</h2>
 <p>I noticed that I had never heard of one particular step before: Base64 conversion. After a bit of research, I learned that the image has to be converted into Base64 format because it is sent via a JSON API and JSON only supports text. Base64 is an encoding method that transforms binary data (like images) into text so it can be transmitted smoothly through text-based protocols. In this way, it serves as a bridge that enables the AI to analyze uploaded images, even though the data exchange only happens in text form.</p>
 
 <img src="./assets/images/screen_2.png" alt="Informationsfluss-Diagramm">
-
+<h2>Challenges</h2>
 <p>Designing the website was not easy. To break away from the chat interface, I came up with the idea of presenting the uploaded image as if on a stage: the user uploads an image from their files, a red curtain opens, and after a short wait (for suspense), a spotlight shines on the image. After another brief pause, the critique of the image appears in a text box.</p>
 <p>The biggest difficulty here was the curtain. There are several layers: the upload area at the beginning, the curtain, the image behind the curtain, and finally the text box with the critique. It took me a while to figure out how to position everything so that the curtain was behind the upload area but still in front of the uploaded image. Through this, I learned how to work with the z-index, which controls the different layers.</p>
 <p>The image upload also didn’t work at first, since the chatbot was unable to read the image. I had to use a different API endpoint, and then the image upload worked. Finally, I had to decide whether I wanted to give the art critic a face or some sort of figure, but I decided against it—this way he remains a bit more mysterious.</p>
+<h2>Alternative ideas and conclusion</h2>
 <p>As an alternative idea, I had considered programming a chatbot that performs a proper image analysis instead of a sarcastic art critic. That could be a genuinely useful tool, instead of just a funny concept like the critic. In my opinion, this was the most challenging project of the semester, but also the one where I learned the most—for example, what an LLM is, what an API endpoint is, and what Base64 means.</p>
 
 <a href="https://github.com/hbk-bs/text-the-universal-interface-20andrea04" class="nav-style-link">repository</a>
