@@ -5,13 +5,17 @@ let barrierWidth2, barrierHeight2; // Zweite Barriere
 let t = 0; // Zeitvariable für Bewegung
 
 function setup(){
-  const canvas = createCanvas(400,400);
+  const canvas = createCanvas(windowWidth * 0.6, windowHeight * 0.6);
   canvas.parent("sketch");
   background("black");
   barrierWidth = width * 0.9; // Breite der Ellipse
   barrierHeight = height * 0.7; // Höhe der Ellipse
   barrierWidth2 = width * 0.5; // Breite der zweiten Ellipse
   barrierHeight2 = height * 0.3; // Höhe der zweiten Ellipse
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth * 0.6, windowHeight * 0.6);
 }
 
 function draw() {

@@ -181,6 +181,15 @@ img {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
+canvas {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
 /* Füge diesen Code zu deiner CSS-Datei hinzu */
 
 /* Gemeinsame Link-Styling für Navigation und Footer */
@@ -317,3 +326,4 @@ header {
     padding-top: 20px;
   }
 }
+
