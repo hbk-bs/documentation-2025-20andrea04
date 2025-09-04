@@ -1,1 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/yqeFQCSs)
+# DOCUMENTATION ANDREA KOST AVILA
+## So/Se 2025
+## Digital Fundamentals at HBK Braunschweig
+## *How is this Repo structured?*
+- A link to my website for this semester with all of the projects
+  - A general reflection and one for each project 
+  - Links to live previews
+  - Links to the repos of the projects
+  - Pictures and screnshots
+  - Debate Club: arguments against AI
+- A license
+
+
+
